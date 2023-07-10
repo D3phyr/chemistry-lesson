@@ -1,0 +1,30 @@
+@import './_fonts.scss';
+@import './_normalize.scss';
+@import './_transitions.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html, #app {
+  height: 100%;
+}
+
+body {
+  font-size: 2.4rem;
+  line-height: 1.1666666667;
+  font-family: 'Undertale Battle', sans-serif;
+  height: 100%;
+  width: 100%;
+
+  &:global(.popup-opened) {
+    overflow: hidden;
+  }
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 3.6rem;
+  line-height: 1.3611111111;
+  margin: 0;
+}

@@ -1,0 +1,76 @@
+.text {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #00f7ea;
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: -3.5rem;
+}
+
+.counter {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-right: 3rem;
+  color: #fff;
+}
+
+.dndList {
+  color: #fff;
+  counter-reset: item;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  & li  {
+    display: flex;
+    align-items: center;
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+  }
+  & p {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 0px 2px 4px rgba(69, 85, 114, 0.2);
+    border-radius: 15px;
+    min-width: 45rem;
+    max-width: 45rem;
+    min-height: 5.8rem;
+    margin: 0;
+    padding: 1.6rem 0.7rem 1.6rem 5.5rem;
+    background-image: url('../../../../../assets/lines.svg');
+    background-repeat: no-repeat;
+    background-position: 1.5rem center;
+    background-size: 2.6rem 1.8rem;
+    color: #000;
+    font-style: normal;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    cursor: move;
+    user-select: none;
+  }
+}
+
+.flipListMove {
+  transition: transform 0.5s;
+}
+
+.ghost {
+  opacity: 0.5;
+  background: #c8ebfb;
+  border-radius: 10px;
+}
+
+.btn {
+  margin-top: 1rem;
+  // padding: 1.4rem 2rem !important;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+}
+
+.wrong {
+  color: rgb(254, 4, 74);
+}

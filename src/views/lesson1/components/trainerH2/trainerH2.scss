@@ -1,0 +1,766 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    // background: url(./components/assets/ExperimentBack.png);
+    background-color: #C3F6F7;
+    background-size: cover;
+    background-image:
+        url(./components/assets/computerHelp.png),
+        url(./components/assets/elementHelp.png),
+        url(./components/assets/flaskHelp.png),
+        url(./components/assets/flaskTubeHelp.png),
+        url(./components/assets/holderLeft.png),
+        url(./components/assets/holderRight.png),
+        url(./components/assets/tripodHelp.png),
+        url(./components/assets/tube.png),
+        url(./components/assets/tubeAcid.png),
+        url(./components/assets/tubeAcidWater.png),
+        url(./components/assets/tubeAcidStatic.png),
+        url(./components/assets/tubeAcidStaticTripod.png),
+        url(./components/assets/tubeAcidStaticTripodWater.png),
+        url(./components/assets/tubeGraphite.png),
+        url(./components/assets/tubeGraphiteStatic.png),
+        url(./components/assets/tubeGraphiteStaticTripod.png),
+        url(./components/assets/tubeGraphiteStaticTripodWater.png),
+        url(./components/assets/tubeGraphiteWater.png),
+        url(./components/assets/tubeHelp.png),
+        url(./components/assets/tubeHydroxide.png),
+        url(./components/assets/tubeHydroxideWater.png),
+        url(./components/assets/tubeHydroxideStatic.png),
+        url(./components/assets/tubeHydroxideStaticTripod.png),
+        url(./components/assets/tubeHydroxideStaticTripodWater.png),
+        url(./components/assets/tubeSand.png),
+        url(./components/assets/tubeSandWater.png),
+        url(./components/assets/tubeSandStatic.png),
+        url(./components/assets/tubeSandStaticTripod.png),
+        url(./components/assets/tubeSandStaticTripodWater.png),
+        url(./components/assets/tubeStart.png),
+        url(./components/assets/tubeVitriol.png),
+        url(./components/assets/tubeVitriolWater.png),
+        url(./components/assets/tubeVitriolStatic.png),
+        url(./components/assets/tubeVitriolStaticTripod.png),
+        url(./components/assets/tubeVitriolStaticTripodWater.png),
+        url(../../../../assets/checkmark.svg);
+    background-size: 0;
+    .elementContainer {
+        position: absolute;
+        top: 1.5rem;
+        right: .5rem;
+        display: flex;
+        gap: .5rem;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    .elementAmimation {
+        opacity: 1;
+        animation-name: elementVisible;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    .elementAmimation:nth-child(1){
+        animation-delay: 3s;
+    }
+    .elementAmimation:nth-child(2){
+        animation-delay: 4s;
+    }
+    .elementAmimation:nth-child(3){
+        animation-delay: 5s;
+    }
+    .elementAmimation:nth-child(4){
+        animation-delay: 6s;
+    }
+    .elementAmimation:nth-child(5){
+        animation-delay: 7s;
+    }
+}
+
+@keyframes elementVisible {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.btn{
+    position: absolute;
+}
+
+.tableBackground{
+    position: fixed;
+    width: 100%;
+    background-color: #4BC2D6;
+    height: 56%;
+    bottom: 0;
+    @media screen and (min-height: 950px) {
+        height: 60vh;
+    }
+}
+
+.cupboard {
+    position: absolute;
+    top: -14%;
+    left: 4%;
+    width: 107.8rem;
+    height: 92rem;
+    background: url(./components/assets/shkaf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (max-aspect-ratio:5/3) {
+        top: -10%;
+    }
+    @media screen and (max-aspect-ratio:4/3) {
+        top: -3%;
+    }
+}
+
+.nonCursor {
+    cursor: grab;
+}
+.upperBlock {
+    z-index: 99 !important;
+}
+
+.vueDrag {
+    z-index: 0;
+    cursor: grab;
+}
+.cursorPointer {
+    cursor: initial;
+}
+.vueDrag:before{
+    outline: none !important;
+}
+
+.tablet {
+    position: absolute;
+    // right: 2.8869047619%;
+    bottom: -20.7rem;
+    z-index: 2;
+    left: 61.9047619048%;
+    @media (max-width: 900px) {
+        max-width: 47.2rem !important;
+        left: 65.904762%;
+        max-height: 77.9rem !important;
+    }
+}
+
+.tubeBlock{
+    position: absolute;
+    width: 9.029rem;
+    height: 12.556rem;
+    z-index: 2;
+}
+
+.itemContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 71%;
+    top: 21%;
+    left: 8.5%;
+    @media (max-width: 900px) {
+        top: 20%;
+    }
+}
+.elementItemContainer {
+    position: relative;
+}
+.elementTrigger {
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 9rem;
+    width: 12rem;
+    z-index: 3;
+}
+.elementHelp {
+    top: 3.1rem;
+    height: 12.398rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: #FFE870;
+    box-shadow: 0px 0px 3rem 2rem #FFE870;
+    border-radius: 100px;
+}
+.elementGraphit{
+    width: 11.082rem;
+    height: 12.398rem;
+    // border: rgb(196, 42, 3) solid 5px;
+    z-index: 1;
+    background: url(./components/assets/graphite.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 2.1rem;
+    .elementGraphitPlate{
+        position: absolute;
+        left: -14%;
+        top: 81%;
+        width: 15.8rem;
+        height: 4rem;
+        background: url(./components/assets/graphitePlate.png);
+        background-size: cover;
+    }
+}
+.elementVitriol{
+    width: 11.082rem;
+    height: 12.398rem;
+    // border: rgb(196, 42, 3) solid 5px;
+    z-index: 1;
+    background: url(./components/assets/vitriol.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 2.1rem;
+    .elementVitriolPlate{
+        position: absolute;
+        left: -14%;
+        top: 81%;
+        width: 15.8rem;
+        height: 4rem;
+        background: url(./components/assets/vitriolPlate.png);
+        background-size: cover;
+    }
+}
+.elementHydroxide{
+    width: 11.082rem;
+    height: 12.398rem;
+    // border: rgb(196, 42, 3) solid 5px;
+    z-index: 1;
+    background: url(./components/assets/hydroxide.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 2.1rem;
+    .elementHydroxidePlate{
+        position: absolute;
+        left: -14%;
+        top: 81%;
+        width: 15.8rem;
+        height: 4rem;
+        background: url(./components/assets/hydroxidePlate.png);
+        background-size: cover;
+    }
+}
+.elementSand{
+    width: 11.082rem;
+    height: 12.398rem;
+    // border: rgb(196, 42, 3) solid 5px;
+    z-index: 1;
+    background: url(./components/assets/sand.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 2.1rem;
+    .elementSandPlate{
+        position: absolute;
+        left: -22%;
+        top: 81%;
+        width: 15.8rem;
+        height: 4rem;
+        background: url(./components/assets/sandPlate.png);
+        background-size: cover;
+    }
+}
+.elementAcid{
+    width: 8.202rem;
+    height: 15.014rem;
+    // border: rgb(196, 42, 3) solid 5px;
+    z-index: 1;
+    background: url(./components/assets/acid.png);
+    background-size: cover;
+    position: relative;
+    .elementAcidPlate{
+        position: absolute;
+        left: -38%;
+        top: 81%;
+        width: 15.8rem;
+        height: 4rem;
+        background: url(./components/assets/acidPlate.png);
+        background-size: cover;
+    }
+}
+
+.disableHelp{
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.tripodHelp{
+    position: absolute;
+    left: 9.904762%;
+    top: 80.5%;
+    background: url(./components/assets/tripodHelp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 26.2rem;
+    height: 15.7rem;
+    .tripodTrigger {
+        // left: 11.504762%;
+        // top: -10%;
+        // left: -10%;
+        position: absolute;
+        width: 16.166rem;
+        height: 11.513rem;
+        z-index: 3;
+    }
+    .triggerExtension {
+        position: absolute;
+        top: -30%;
+        left: -28%;
+        width: 8.166rem;
+        height: 10rem;
+    }
+    .tripod {
+        left: 11.504762%;
+        top: 20.25%;
+        position: absolute;
+        width: 22.166rem;
+        height: 11.513rem;
+        z-index: 1;
+        background: url(./components/assets/tripod.png);
+        background-size: cover;
+        .tubeFixedContainer {
+            left: 31.504762%;
+            top: 12.05%;
+            position: absolute;
+            width: 4rem;
+            height: 8.513rem;
+        }
+    }
+}
+
+.hanger {
+    position: absolute;
+    top: 29%;
+    left: 42.8%;
+    // right: 27.848545%;
+    width: 31.815rem;
+    height: 40.155rem;
+    z-index: 1;
+    background: url(./components/assets/hanger.png);
+    background-size: cover;
+    @media (min-height: 950px) {
+        background: url(./components/assets/hanger2.png);
+        background-size: cover;
+    }
+    @media (max-width: 1500px) {
+        background: url(./components/assets/hanger2.png);
+        background-size: cover;
+    }
+    @media screen and (min-aspect-ratio:7/3) {
+        background: url(./components/assets/hanger2.png);
+        background-size: cover;
+    }
+    .hangerHelp {
+        position: absolute;
+        width: 14.815rem;
+        top: 17.3%;
+        left: -15%;
+        height: 14.155rem;
+        background: url(./components/assets/tubeHelp.png);
+        background-size: cover;
+    }
+    .hangerTrigger {
+        z-index: 2;
+        position: absolute;
+        top: 27.1%;
+        left: -2.8%;
+        width: 8.646rem;
+        height: 7.183rem;
+    }
+    .hangerTriggerExtend {
+        top: -3.4%;
+        left: -26.2%;
+        width: 18.646rem;
+        height: 12.183rem;
+    }
+    .hangerImg {
+        cursor: pointer;
+        background: url(./components/assets/tubeStart.png);
+        background-size: cover;
+    }
+    .hangerHelpDimly {
+        opacity: 0.7;
+    }
+    .hangerUpper {
+        position: absolute;
+        // right: 27.848545%;
+        width: 31.815rem;
+        height: 40.155rem;
+        z-index: 1;
+        background: url(./components/assets/hanger.png);
+        background-size: cover;
+        @media (min-height: 950px) {
+            background: url(./components/assets/hanger2.png);
+            background-size: cover;
+        }
+        @media (max-width: 1500px) {
+            background: url(./components/assets/hanger2.png);
+            background-size: cover;
+        }
+        @media screen and (min-aspect-ratio:7/3) {
+            background: url(./components/assets/hanger2.png);
+            background-size: cover;
+        }
+    }
+}
+
+.flaskHelp {
+    position: absolute;
+    top: 67%;
+    left: 39%;
+    width: 20.623rem;
+    height: 28.085rem;
+    background: url(./components/assets/flaskTubeHelp.png);
+    background-size: cover;
+    .flaskTrigger {
+        // left: 20%;
+        // top: 20%;
+        position: absolute;
+        width: 13rem;
+        height: 10rem;
+        z-index: 3;
+    }
+    .flask {
+        position: absolute;
+        top: 21%;
+        left: 26.459656%;
+        width: 10.623rem;
+        height: 18.085rem;
+        z-index: 1;
+        background: url(./components/assets/flask.png);
+        background-size: cover;
+    }
+}
+
+.tubeFlaskHelp {
+    position: absolute;
+    top: 63%;
+    left: 31.5%;
+    width: 17.478rem;
+    height: 23.957rem;
+    z-index: 1;
+    background: url(./components/assets/flaskTubeHelp.png);
+    background-size: cover; 
+    .flaskTubeBlock {
+        position: absolute;
+        width: 9.029rem;
+        height: 19.556rem;
+        left: 31%;
+        z-index: 2;
+        background: url(./components/assets/tubeFlask.png);
+        background-size: cover;
+    }
+}
+
+.computerContainer {
+    left: 5.94378306878%;
+    top: 37%;
+    position: absolute;
+    width: 48.006rem;
+    height: 35.308rem;
+    background: url(./components/assets/computer.png);
+    background-size: cover;
+    position: relative;
+    .computerTrigger {
+        position: absolute;
+        top: 21.1%;
+        left: -6.6%;
+        width: 20.3rem;
+        height: 20.6rem;
+        z-index: 3;
+    }
+    .computerInputHelp {
+        position: absolute;
+        top: 26.6%;
+        left: -4.7%;
+        width: 23.7rem;
+        height: 23.8rem;
+        background: url(./components/assets/computerHelp.png);
+        background-size: cover;
+        .computerInput {
+            position: absolute;
+            top: 31.1%;
+            left: 23.3%;
+            width: 13rem;
+            overflow: hidden;
+            height: 9.6rem;
+        }
+        .computerInputHolderLeft {
+            position: absolute;
+            top: 38.1%;
+            left: -12%;
+            width: 7.742rem;
+            height: 1.19rem;
+            background: url(./components/assets/holderLeft.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .computerInputHolderRight {
+            position: absolute;
+            top: 38.1%;
+            right: -12%;
+            width: 7.742rem;
+            height: 1.19rem;
+            background: url(./components/assets/holderRight.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .computerOutput {
+        position: absolute;
+        top: 31%;
+        left: 44%;
+        width: 14.7rem;
+        height: 16rem;
+    }
+    .computerElementName {
+        top: 84%;
+        left: 5.8%;
+        width: 13.8rem;
+        height: 2.4rem;
+        position: absolute;
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        color: #1F3345;
+        text-align: center;
+    }
+    .graphiteComp {
+        background: url(./components/elemDescGraphite/elem1Image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .vitriolComp {
+        background: url(./components/elemDescVitriol/elem1Image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hydroxideComp {
+        background: url(./components/elemDescHydroxide/elem1Image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .sandComp {
+        background: url(./components/elemDescSand/elem1Image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .acidComp {
+        background: url(./components/elemDescAcid/elem1Image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.tube{
+    background: url(./components/assets/tube.png);
+    background-size: cover;
+}
+
+.tubeGraphite {
+    background: url(./components/assets/tubeGraphite.png);
+    background-size: cover;
+}
+.tubeGraphiteFixed {
+    background: url(./components/assets/tubeGraphiteStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeGraphiteFixedTripod {
+    background: url(./components/assets/tubeGraphiteStaticTripod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeGraphiteFixedTripodWater {
+    background: url(./components/assets/tubeGraphiteStaticTripodWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeGraphiteWater {
+    background: url(./components/assets/tubeGraphiteWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tubeVitriol {
+    background: url(./components/assets/tubeVitriol.png);
+    background-size: cover;
+}
+.tubeVitriolFixed {
+    background: url(./components/assets/tubeVitriolStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeVitriolFixedTripod {
+    background: url(./components/assets/tubeVitriolStaticTripod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeVitriolFixedTripodWater {
+    background: url(./components/assets/tubeVitriolStaticTripodWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeVitriolWater {
+    background: url(./components/assets/tubeVitriolWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tubeHydroxide {
+    background: url(./components/assets/tubeHydroxide.png);
+    background-size: cover;
+}
+.tubeHydroxideFixed {
+    background: url(./components/assets/tubeHydroxideStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeHydroxideFixedTripod {
+    background: url(./components/assets/tubeHydroxideStaticTripod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeHydroxideFixedTripodWater {
+    background: url(./components/assets/tubeHydroxideStaticTripodWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeHydroxideWater {
+    background: url(./components/assets/tubeHydroxideWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tubeSand {
+    background: url(./components/assets/tubeSand.png);
+    background-size: cover;
+}
+.tubeSandFixed {
+    background: url(./components/assets/tubeSandStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeSandFixedTripod {
+    background: url(./components/assets/tubeSandStaticTripod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeSandFixedTripodWater {
+    background: url(./components/assets/tubeSandStaticTripodWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeSandWater {
+    background: url(./components/assets/tubeSandWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tubeAcid {
+    background: url(./components/assets/tubeAcid.png);
+    background-size: cover;
+}
+.tubeAcidFixed {
+    background: url(./components/assets/tubeAcidStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeAcidFixedTripod {
+    background: url(./components/assets/tubeAcidStaticTripod.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeAcidFixedTripodWater {
+    background: url(./components/assets/tubeAcidStaticTripodWater.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tubeAcidWater {
+    background: url(./components/assets/tubeAcidStatic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dragHidden{
+    opacity: 0;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-0.25px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(0.5px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(1px, 0, 0);
+    }
+}
+
+.shakeHelp {
+    animation: shakeHelp 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+@keyframes shakeHelp {
+    10%, 90% {
+        transform: translate3d(-0.75px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(1.5px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(3px, 0, 0);
+    }
+}

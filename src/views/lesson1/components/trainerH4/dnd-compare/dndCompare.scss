@@ -1,0 +1,134 @@
+.text {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #00f7ea;
+  max-width: 100%;
+}
+
+.dndCompareList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  margin-top: 3.2rem;
+}
+
+.dndCompareLeftItem {
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 0px 2px 4px rgba(69, 85, 114, 0.2);
+  border-radius: 15px;
+  list-style: none;
+  min-width: 10rem;
+  min-height: 5.8rem;
+  padding: 1.4rem 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  & p {
+    margin: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1.5rem;
+    right: -1.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+}
+
+.dndCompareRightItem {
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 0px 2px 4px rgba(69, 85, 114, 0.2);
+  border-radius: 15px;
+  list-style: none;
+  width: 24.5rem;
+  min-height: 5.8rem;
+  padding: 1.4rem 0.5rem 1.4rem 3rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+  z-index: 20;
+  pointer-events: none;
+  & p {
+    margin: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1.5rem;
+    left: -1.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 13.2rem;
+  left: 14rem;
+  max-width: 23rem;
+  max-height: 38rem;
+}
+
+.wrong {
+  color: rgb(254, 4, 74);
+}
+
+@media screen and (max-width: 1200px) {
+  .svg {
+    transform: scaleY(1.01);
+    top: 13.3rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .svg {
+    transform: scaleY(1.02);
+    top: 13.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .svg {
+    transform: scaleY(1.025);
+    top: 13.7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .svg {
+    transform: scaleY(1.03);
+    top: 13.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .svg {
+    transform: scaleY(1.045);
+    top: 14.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .svg {
+    transform: scaleY(1.07);
+    top: 14.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .svg {
+    transform: scaleY(1.07);
+    top: 14.6rem;
+  }
+}

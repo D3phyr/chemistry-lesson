@@ -1,0 +1,168 @@
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tablet {
+  position: absolute;
+  bottom: -3.5rem;
+  right: 9rem;
+}
+
+.inner {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.text {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #00f7ea;
+  max-width: 100%;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.tabTitle {
+  color: #fff;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #00FF00;
+  font-style: normal;
+  font-weight: 0;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: border-bottom .2s;
+  opacity: 0;
+  &:hover {
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+  }
+  &.active {
+    color: #00FF00;
+    border-bottom: 3px solid transparent;
+    cursor: default;
+    user-select: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 10.2rem;
+  left: -60.5rem;
+  max-width: 45rem;
+  min-height: 50rem;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  border: 3px solid #1F3345;
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: filter .3s;
+  &:hover {
+    cursor: pointer;
+    filter: invert(87%) sepia(2%) saturate(3%) hue-rotate(355deg) brightness(96%) contrast(90%);
+  }
+}
+
+.modalFormula {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #000;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.modalText {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #1F3345;
+}
+
+.btn {
+  margin-top: 13.5rem;
+  // padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10rem;
+}
+
+pre {
+  font-family: 'Undertale Battle Font';
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #1F3345;
+}
+
+.img {
+  max-width: 100%;
+}
+
+@media screen and (min-height: 900px) {
+  .tablet {
+    bottom: -6rem;
+  }
+}
+
+@media screen and (max-aspect-ratio: 5/3) {
+  .tablet {
+    bottom: -6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    left: -50rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    left: 10vw;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .btn {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .btn {
+    margin-top: 3rem;
+    // padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 0;
+  }
+
+  .modalText {
+    white-space: pre-line;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    color: #1F3345;
+    margin-bottom: 0;
+  }
+
+  .modal {
+    min-height: unset;
+    padding-bottom: 2rem;
+    top: 7rem;
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  height: 100%;
+  padding:
+    env(safe-area-inset-top, 2rem)
+    env(safe-area-inset-right, 2rem)
+    env(safe-area-inset-bottom, 2rem)
+    env(safe-area-inset-left, 2rem);
+}
+
+.button {
+  position: fixed;
+  z-index: 9999;
+  right: 2rem;
+  top: 2rem;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.tablet {
+  position: absolute;
+  bottom: -12.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text {
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: #00f7ea;
+  max-width: 100%;
+}
+
+.btn {
+  margin-top: 2.5rem;
+  z-index: 20;
+}

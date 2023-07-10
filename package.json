@@ -1,0 +1,42 @@
+{
+  "name": "vue-base-spa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --host 0.0.0.0",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.4.3",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "flow-adaptive-vue": "^1.0.0",
+    "gsap": "^3.11.3",
+    "imports-loader": "^0.8.0",
+    "interactjs": "^1.10.2",
+    "portal-vue": "^2.1.6",
+    "three": "^0.124.0",
+    "vue": "^2.7.10",
+    "vue-drag-resize": "^1.5.4",
+    "vue-flickity": "^1.2.1",
+    "vue-glitch": "^1.0.1",
+    "vue-movable-element": "^1.0.0",
+    "vue-router": "^3.0.3",
+    "vue2-touch-events": "^3.2.2",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.7.10"
+  }
+}

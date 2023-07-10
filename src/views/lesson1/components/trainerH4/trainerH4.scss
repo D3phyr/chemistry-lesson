@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.tablet {
+  position: absolute;
+  bottom: -3rem;
+  left: 28%;
+}
+
+.inner {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-height: 900px) {
+  .tablet {
+    bottom: -6rem;
+  }
+}
+
+@media screen and (max-aspect-ratio:5/3) {
+  .tablet {
+    bottom: -6rem;
+  }
+}
